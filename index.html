@@ -5,8 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Montserrat:wght@500;600&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f426985a11.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Anirudha Desai Portfolio</h1>
+    <div id="navbar">
+        <div id="logo">
+            <img src="images/Logo.jpg" alt="">
+        </div>
+        <div>
+            <h3>HOME</h3>
+            <h3>ABOUT</h3>
+            <h3>SKILLS</h3>
+            <h3>PROJECTS</h3>
+            <h3>RESUME</h3>
+            <h3>CONTACT</h3>
+        </div>
+    </div>
+    <div id="about">
+        <div>
+            <h3>WELCOME TO MY WORLD</h3>
+            <p>Hi, I'm <span>Anirudha Desai</span></p>
+            <h2>a Java Backend Developer</h2>
+        </div>
+        <div>
+            <img src="/images/Anirudha Closeup.jpg" alt="">
+        </div>
+    </div>
+    
+    <div id="aboutme">
+        <h1>About Me</h1>
+        <div>
+            <div>
+                <img src="/images/Anirudha Closeup.jpg" alt="">
+            </div>
+            <div>
+                <div>
+                    <h2>I'm Anirudha Desai and <span>Java Developer</span></h2>
+                    <p>Hi! My name is <span>Anirudha Desai</span>. I am a Java Developer, and I'm very passionate and dedicated to my work.
+                        With 1200+ hours of a coding experience. I have acquired knowledge necessary to make your work better.
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <li><i class="fa-solid fa-gift"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Birthday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</span>&nbsp; 03 Nov 2000</li>
+                        <li><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</span>&nbsp Kolhapur,Maharashtra</li>
+                        <li><i class="fa-solid fa-school"></i>&nbsp;&nbsp;&nbsp;<span>Studied At&nbsp;&nbsp; :</span>&nbsp; Chhatrapati Shivaji University</li>
+                        <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp;desaianu90@gmail.com</li>
+                    </div>
+                    <div>
+                        <li><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp; 22</li>
+                        <li><i class="fa-solid fa-gamepad"></i>&nbsp;&nbsp;&nbsp;<span>Interests&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp; Traveling, Motorcycling</li>
+                        <li><i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;<span>Degree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp; Bachelor of Arts</li>
+                        <li><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp;+91 9172670716</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="downloadResume">Download Resume</button>
+    </div>
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    let navbar = document.getElementById("navbar");
+    window.onscroll = function(){
+        if(window.scrollY>20){
+            navbar.classList.add("scrolled");
+        } else{
+            navbar.classList.remove("scrolled");
+        }
+    }
+</script>
