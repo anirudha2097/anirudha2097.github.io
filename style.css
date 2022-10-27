@@ -18,9 +18,6 @@ body{
     transition: 0.5s;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#logo{
-    /* background-color: rgb(243, 243, 244); */
-}
 #logo>img{
     width:18%;
     margin-left: 40px;
@@ -179,10 +176,10 @@ body{
     height: 500px;
     border: 1px solid black;
 }
-@media screen and (min-width:481px) and (max-width:768px) {
+/* @media screen and (min-width:481px) and (max-width:768px) {
     
 }
 
 @media screen and (min-width:320px) and (max-width:480px) {
     
-}
+} */
