@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Montserrat:wght@500;600&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Montserrat:wght@500;600;800&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f426985a11.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("wI7hDI-fRxLu8krW-");
+        })();
+    </script>
 </head>
 <body>
-    <div id="navbar">
+    <!-- Navbar -->
+    <nav id="navbar">
         <div id="logo">
             <img src="images/Logo.jpg" alt="">
         </div>
-        <div>
-            <h3>HOME</h3>
-            <h3>ABOUT</h3>
-            <h3>SKILLS</h3>
-            <h3>PROJECTS</h3>
-            <h3>RESUME</h3>
-            <h3>CONTACT</h3>
+        <div class="container">
+            <h3 class="home"><a id="1" href="#home" onclick="navbtn(id)">HOME</a></h3>
+            <h3 class="aboutme"><a id="2" href="#aboutme" onclick="navbtn(id)">ABOUT ME</a></h3>
+            <h3 class="skills"><a id="3" href="#skills" onclick="navbtn(id)">SKILLS</a></h3>
+            <h3 class="projects"><a id="4" href="#projects" onclick="navbtn(id)">PROJECTS</a></h3>
+            <h3 class="contact"><a id="5" href="#contact" onclick="navbtn(id)">CONTACT</a></h3>
+            <h3><a id="6" href="files/Anirudha-Desai-Resume.pdf" download>RESUME</a></h3>
         </div>
-    </div>
-    <div id="about">
+    </nav>
+    
+    <!-- Home -->
+    <section id="home">
         <div>
             <h3>WELCOME TO MY WORLD</h3>
             <p>Hi, I'm <span>Anirudha Desai</span></p>
@@ -32,9 +43,10 @@
         <div>
             <img src="/images/Anirudha Closeup.jpg" alt="">
         </div>
-    </div>
+    </section>
     
-    <div id="aboutme">
+    <!-- About Section -->
+    <section id="aboutme">
         <h1>About Me</h1>
         <div>
             <div>
@@ -48,42 +60,170 @@
                     </p>
                 </div>
                 <div>
-                    <div>
-                        <li><i class="fa-solid fa-gift"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Birthday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</span>&nbsp; 03 Nov 2000</li>
-                        <li><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</span>&nbsp Kolhapur,Maharashtra</li>
-                        <li><i class="fa-solid fa-school"></i>&nbsp;&nbsp;&nbsp;<span>Studied At&nbsp;&nbsp; :</span>&nbsp; Chhatrapati Shivaji University</li>
-                        <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp;desaianu90@gmail.com</li>
-                    </div>
-                    <div>
-                        <li><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp; 22</li>
-                        <li><i class="fa-solid fa-gamepad"></i>&nbsp;&nbsp;&nbsp;<span>Interests&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp; Traveling, Motorcycling</li>
-                        <li><i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;<span>Degree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp; Bachelor of Arts</li>
-                        <li><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp;+91 9172670716</li>
-                    </div>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-gift"></i></td>
+                            <td>&nbsp;&nbsp;Birthday</td>
+                            <td>&nbsp;&nbsp;:&nbsp;&nbsp; 03 Nov 2000</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-location-dot"></i></td>
+                            <td>&nbsp;&nbsp;Location</td>
+                            <td>&nbsp;&nbsp;:&nbsp;&nbsp; Kolhapur, Maharashtra</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-school"></i></td>
+                            <td>&nbsp;&nbsp;Studied At</td>
+                            <td>&nbsp;&nbsp;:&nbsp;&nbsp; Chhatrapati Shivaji University</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-calendar"></i></td>
+                            <td>&nbsp;&nbsp;Age</td>
+                            <td>&nbsp;&nbsp;:&nbsp;&nbsp; 22</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-gamepad"></i></td>
+                            <td>&nbsp;&nbsp;Interests</td>
+                            <td>&nbsp;&nbsp;:&nbsp;&nbsp; Traveling, Motorcycling</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-graduation-cap"></i></td>
+                            <td>&nbsp;&nbsp;Degree</td>
+                            <td>&nbsp;&nbsp;:&nbsp;&nbsp; Bachelor of Arts</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-        <button id="downloadResume">Download Resume</button>
-    </div>
+        <a id="downloadResume" href="files/Anirudha-Desai-Resume.pdf" download>Download Resume</a>
+    </section>
 
-    <div id="projects">
+    <!-- Skills Sections -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <div>
+
+        </div>
+        <div>
+            <div>
+                <img src="images/java.png" alt="">
+                <h2>Java</h2>
+            </div>
+            <div>
+                <img src="images/mysql.png" alt="">
+                <h2>MySql</h2>
+            </div>
+            <div>
+                <img src="images/hibernate.png" alt="">
+                <h2>Hibernate</h2>
+            </div>
+            <div>
+                <img src="images/leaf.png" alt="">
+                <h2>SpringBoot</h2>
+            </div>
+            <div>
+                <img src="images/javascript.png" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div>
+                <img src="images/html.png" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div>
+                <img src="images/css.png" alt="">
+                <h2>CSS</h3>
+            </div>
+            <div>
+                <img src="images/php.png" alt="">
+                <h2>PHP</h2>
+            </div>
+            <!-- <div>
+                <img src="images/github.png" alt="">
+                <h2>GitHub</h2>
+            </div>
+            <div>
+                <img src="images/vscode.png" alt="">
+                <h2>VS Code</h2>
+            </div> -->
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
         <h1>Projects</h1>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img src="images/nature basket.png" alt="Nature's Basket Homepage img">
+                <h2>Nature's Basket</h2>
+                <p>Nature's Basket is an Indian online and retail strore grocery delivery chain focused in gourmet food. 
+                    It has a range of organic food, imported ingredients and exotic foods.</p>
+                <p><b>Tech Stacks:</b></p>
+                <p><i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                </p>
+                <button id="git1Button">Github <i class="fa-brands fa-github"></i></button>
+                <button id="deploy1Button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div>
+                <img src="images/coschedule.png" alt="CoSchedule Homepage img">
+                <h2>CoSchedule</h2>
+                <p>
+                    A calendar that helps you see, schedule, and share your marketing. 
+                    A family of agile marketing products to coordinate your team, projects, and process.
+                </p>
+                <p><b>Tech Stacks:</b></p>
+                <p><i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                </p>
+                <button id="git2Button">Github <i class="fa-brands fa-github"></i></button>
+                <button id="deploy2Button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+        <h1>Contact</h1>
+        <div>
+            <div>
+                <div>
+                    <i class="fa-solid fa-map"></i>
+                    <p>255/7, 'B' ward, Sambhajinagar,<br>Kolhapur, Maharashtra</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+91 9172670716</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>desaianu90@gmail.com</p>
+                </div>
+            </div>
+    
+            <div>
+                <input type="text" id="fullName" placeholder="YOUR NAME">
+                <input type="email" name="" id="email_id" placeholder="YOUR EMAIL">
+                <br>
+                <input type="text" id="subject" placeholder="SUBJECT">
+                <br>
+                <textarea type="text" id="message" placeholder="MESSAGE"></textarea>
+                <br>
+                <button onclick="SendMail()">SEND MESSAGE</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="socialMedia">
+        <i class="fa-brands fa-instagram" id="instagram"></i>
+        <i class="fa-brands fa-linkedin" id="linkedin"></i>
+        <i class="fa-brands fa-github" id="github"></i>
     </div>
 </body>
 </html>
-<script>
-    let navbar = document.getElementById("navbar");
-    window.onscroll = function(){
-        if(window.scrollY>20){
-            navbar.classList.add("scrolled");
-        } else{
-            navbar.classList.remove("scrolled");
-        }
-    }
-</script>
+<script src="script.js" ></script>
+
+<!-- color : #c5015c -->

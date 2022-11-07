@@ -1,9 +1,12 @@
 body{
-    /* background-color: rgb(243, 243, 244); */
     font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 #navbar{
     width: 100%;
+    height: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,7 +24,6 @@ body{
 #logo>img{
     width:18%;
     margin-left: 40px;
-    /* filter:invert(4%); */
 }
 #navbar>div:nth-child(2){
     width: 70%;
@@ -29,104 +31,113 @@ body{
     display: flex;
     justify-content: space-around;
 }
-#navbar>div:nth-child(2)>h3{
+#navbar>div:nth-child(2)>h3, #navbar>div:nth-child(2)>h3>a{
     font-size: 12px;
     font-weight: 500;
+    color: black;
+    text-decoration: none;
 }
-#navbar>div:nth-child(2)>h3:hover{
-    color: rgb(6, 177, 162);
+#navbar>div:nth-child(2)>h3>a:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
+    font-weight: 600;
 }
-#about{
-    width: 85%;
+  
+#home{
+    width: 90%;
+    height: 500px;
     margin: auto;
-    margin-top: 250px;
-    /* margin-left: 80px; */
-    /* margin-bottom: 130px; */
+    margin-top: -10px;
+    padding: 40px 0px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#about>div>p:nth-child(2){
+#home>div>p:nth-child(2){
     font-size: 52px;
     font-weight: 600;
     margin-top: 0px;
 }
-#about>div>p:nth-child(2)>span{
+#home>div>p:nth-child(2)>span{
     color: rgb(6, 177, 162);
 }
-#about>div>h2{
+#home>div>h2{
     font-size: 30px;
     font-weight: 400;
     margin-top: -50px;
 }
-#about>div>h3{
+#home>div>h3{
     margin-left: 5px;
     font-size: 18px;
     font-weight: 500;
 }
-#about>div:nth-child(2){
+#home>div:nth-child(2){
     width: 250px;
     height: 300px;
     margin-left: 150px;
-    margin-top: -80px;
-    border-radius: 30px; 
+    margin-top: 80px;
     border: 15px solid rgb(6, 177, 162);
+    border-radius: 20px;
 }
-#about>div>img{
+#home>div>img{
     width: 290px;
     position: relative;
-    bottom: 40px;
-    right: 50px;
-    border-radius: 20px;
+    bottom: 50px;
+    right: 70px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   
+    border-radius: 15px;
 }
 #aboutme{
     width: 100%;
-    padding: 30px 7px 90px 7px;
+    padding: 80px 7px;
     margin: auto;
     margin-left: -6px;
-    margin-top: 120px;
     background-color: whitesmoke;
 }
 #aboutme>h1{
-    width: 85%;
-    margin-left: 100px;
+    width: 90%;
+    margin: auto;
     margin-bottom: -60px;
+    color: rgb(7, 165, 152);
+    font-size: 35px;
 }
 #aboutme>div{
-    width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 100px;
-    /* margin-left: 80px; */
     display: flex;
-    gap: 80px;
+    gap: 100px;
 }
 #aboutme>div>div:nth-child(1){
     width: 220px;
     height: 250px;
-    margin-top: 30px;
-    border-radius: 30px; 
+    margin-top: 30px; 
     border: 10px solid rgb(6, 177, 162);
+    border-radius: 15px;
 }
 #aboutme>div>div>img{
     width: 250px;
     position: relative;
-    bottom: 34px;
-    left: 4px;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   
+    bottom: 40px;
+    left: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
 }
 #aboutme>div>div:nth-child(2){
     margin-top: -20px;
-    line-height: 25px;
+    margin-bottom: 30px;
+    line-height: 35px;
+}
+#aboutme>div>div:nth-child(2)>div>h2{
+    font-weight: 600;
 }
 #aboutme>div>div:nth-child(2)>div>h2>span{
     color: rgb(6, 177, 162);
 }
 #aboutme>div>div:nth-child(2)>div:nth-child(2){
     display: flex;
-    gap: 30px;
+    gap: 50px;
     line-height: 35px;
 }
 #aboutme>div>div:nth-child(2)>div>p>span{
@@ -134,47 +145,264 @@ body{
     color: rgb(6, 177, 162);
     font-style: italic;
 }
-#aboutme>div>div>div>div>li{
-    list-style-type: none;
-}
-#aboutme>div>div>div>div>li>span{
+
+#aboutme>div>div>div>table tr>td:nth-child(2){
     font-weight: 600;
 }
-#aboutme>div>div>div>div>li>i{
-    /* font-weight: 600; */
+#aboutme>div>div>div>table tr>td>i{
+    font-size: 17px;
     color: rgb(6, 177, 162);
 }
 #downloadResume{
     width: 180px;
-    margin-top: -10px;
-    margin-left: 412px;
+    margin-left: 400px;
     padding: 14px 20px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     color: rgb(243, 243, 244);
     background-color: rgb(6, 177, 162);
     border: 0px;
     border-radius: 5px;
+    text-decoration: none;
 }
 #downloadResume:hover{
     background-color: rgb(7, 165, 152);
-    font-weight: 600;
+    cursor: pointer;
+}
+#skills{
+    width: 100%;
+    padding: 80px 0px;
+}
+#skills>h1{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(7, 165, 152);
+    /* background: linear-gradient(90deg,violet,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    font-size: 35px;
+}
+#skills>div{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 30px;
+}
+#skills>div>div{
+    border: 1px solid violet;
+    text-align: center;
+}
+#skills>div>div:hover{
+    background-color: rgba(125, 204, 204, 0.192);
+}
+#skills>div>div>img{
+    width: 70%;
+}
+#skills>div>div:nth-child(3)>img{
+    width: 55%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    filter: invert(100%);
+    border-radius: 50%;
+    background-color: rgb(57, 205, 205);
+}
+#skills>div>div:nth-child(4)>img{
+    width: 55%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    filter: invert(100%);
+    border-radius: 50%;
+    background-color: rgb(201, 61, 201);
+}
+#skills>div>div>h2{
+    color: rgb(3, 113, 104);
 }
 #projects{
     width: 100%;
-    margin-top: 80px;
+    padding: 80px 7px;
+    margin: auto;
+    margin-left: -6px;
+    background-color: whitesmoke;
 }
 #projects>h1{
-    margin-left: 100px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(7, 165, 152);
+    font-size: 35px;
 }
 #projects>div{
-    margin-left: 100px;
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
+    gap:60px;
 }
 #projects>div>div{
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
+    height:auto;
+    border-radius: 18px;
+    padding-bottom: 20px;
+    /* background-color: rgba(245, 245, 245, 0.626); */
+    background-color: rgba(248, 248, 248, 0.842);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#projects>div>div>img{
+    width: 100%;
+    height: 48%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: white;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom: 1px solid gainsboro;
+}
+#projects>div>div:nth-child(2)>img{
+    background-color: rgba(245, 245, 245, 0.626);
+}
+#projects>div>div>h2{
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(3, 113, 104);
+}
+#projects>div>div>p{
+    width: 85%;
+    margin: auto;
+}
+#projects>div>div>p:nth-child(3){
+    text-align: justify;
+}
+#projects>div>div>p:nth-child(4){
+    margin-top: 8px;
+    font-size: 1.15rem;
+    color: rgb(3, 113, 104);
+}
+#projects>div>div>p>i{
+    font-size: 30px;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+#projects>div>div>p>i:nth-child(1){
+    color: orangered;
+}
+#projects>div>div>p>i:nth-child(2){
+    color: blue;
+}
+#projects>div>div>p>i:nth-child(3){
+    color: rgb(211, 211, 18);
+}
+#projects>div>div>button{
+    margin-top: 15px;
+    margin-left: 35px;
+    margin-right: -10px;
+    padding:8px 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(7, 165, 152);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+#projects>div>div>button:hover{
+    background-color: rgb(3, 110, 101);
+    cursor: pointer;
+}
+#projects>div>div>button>i{
+    font-size: 12px;
+}
+#projects>div>div:nth-child(2)>p:nth-child(4){
+    margin-top: 27px;
+}
+#contact{
+    width: 100%;
+    padding: 80px 0px;
+}
+#contact>h1{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(7, 165, 152);
+    font-size: 35px;
+}
+#contact>div{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#contact>div>div>input, #contact>div>div>textarea{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    border: 0.5px solid rgb(128, 122, 122);
+}
+#contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2){
+    width: 265px;
+    height: 22px;
+    padding: 10px;
+}
+#contact>div>div>input:focus,#contact>div>div>textarea:focus{
+    outline: none;
+    border: 0.5px solid rgb(7, 165, 152);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#contact>div>div>input:nth-child(4){
+    width: 556px;
+    height: 22px;
+    padding: 10px;
+}
+#contact>div>div>textarea:nth-child(6){
+    width: 556px;
+    max-width: 556px;
+    min-width: 556px;
+    height: 180px;
+    padding: 10px;
+}
+#contact>div>div>button{
+    /* width: 580px; */
+    margin-top: 10px;
+    padding: 14px 235px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(7, 165, 152);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+#contact>div>div>button:hover{
+    background-color: rgb(3, 110, 101);
+    cursor: pointer;
+}
+#contact>div>div>div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#contact>div>div>div>i{
+    color: rgb(7, 165, 152);
+    font-size: 20px;
+}
+#socialMedia{
+    width: 100%;
+    padding: 60px 9px 60px 7px;
+    margin: auto;
+    margin-left: -8px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+    background-color: black;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#socialMedia>i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 /* @media screen and (min-width:481px) and (max-width:768px) {
     
