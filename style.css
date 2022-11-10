@@ -25,25 +25,48 @@ html{
     width:18%;
     margin-left: 40px;
 }
-#navbar>div:nth-child(2){
+#navbar .container{
     width: 70%;
     margin-right: 0%;
     display: flex;
     justify-content: space-around;
 }
-#navbar>div:nth-child(2)>h3, #navbar>div:nth-child(2)>h3>a{
+#navbar .container ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#navbar .container li{
+    width: 13%;
+}
+#navbar .container li, #navbar .container li>a{
     font-size: 12px;
     font-weight: 500;
     color: black;
+    list-style: none;
     text-decoration: none;
 }
-#navbar>div:nth-child(2)>h3>a:hover{
-    cursor: pointer;
+#navbar .container li:hover{
     transform: scale(1.05);
+    transition: 0.4s;
+    font-weight: 600;
+}
+#navbar .container li>a:hover{
+    cursor: pointer;
+    color: rgb(6, 177, 162);
+    font-weight: 600;
+}
+#navbar .container li>a.active{
+    color: rgb(6, 177, 162);
+    font-size: 13px;
     transition: 0.3s;
     font-weight: 600;
 }
-  
+.sticky .home.active{
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
 #home{
     width: 90%;
     height: 500px;
@@ -58,14 +81,10 @@ html{
     font-size: 52px;
     font-weight: 600;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 #home>div>p:nth-child(2)>span{
     color: rgb(6, 177, 162);
-}
-#home>div>h2{
-    font-size: 30px;
-    font-weight: 400;
-    margin-top: -50px;
 }
 #home>div>h3{
     margin-left: 5px;
@@ -88,12 +107,61 @@ html{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   
     border-radius: 15px;
 }
-#aboutme{
+.wrapper{
+    display: inline-flex;
+    margin-left: -5px;
+}
+.wrapper .dynamic-txt{
+    margin-top: 1px;
+    margin-left: 0px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    color: rgb(6, 177, 162);
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -32px;
+    position: relative;
+    top: 0;
+    animation: slide 8s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -160px;
+    }
+}
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid rgb(6, 177, 162);
+    animation: typing 2s steps(15) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -20px 0 20px;
+    }
+}
+section:nth-child(odd){
     width: 100%;
     padding: 80px 7px;
     margin: auto;
     margin-left: -6px;
     background-color: whitesmoke;
+}
+section:nth-child(1){
+    background-color: white;
+    padding: 0;
 }
 #aboutme>h1{
     width: 90%;
@@ -170,6 +238,80 @@ html{
     background-color: rgb(7, 165, 152);
     cursor: pointer;
 }
+#education{
+    width: 100%;
+    padding: 80px 0px;
+}
+#education>h1{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(7, 165, 152);
+    font-size: 35px;
+}
+#education>div{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+#education>div:nth-child(3){
+    width: 35px;
+    position: absolute;
+    top: 1280px;
+    left: 613px;
+    font-size: 150px;
+}
+#education>div:nth-child(3)>p{
+    margin-top: -40px;
+    margin-bottom: -20px;
+    color: rgb(7, 165, 152);
+    text-shadow: 2px 1px 20px rgb(3, 113, 104);
+}
+#educationcolumn>div>div>h2{
+    color: rgb(3, 113, 104);
+}
+#educationcolumn>div>div:nth-child(1){
+    border-right: 2px solid rgb(3, 113, 104);
+    padding: 20px 0px;
+}
+#educationcolumn>div:nth-child(odd)>div:nth-child(1){
+    margin-left: 50px;
+    line-height: 15px;
+}
+#educationcolumn>div:nth-child(even)>div:nth-child(2){
+    width: 90%;
+    margin-left: 80px;
+    padding: 10px 0px 0px 0px;
+    line-height: 15px;
+}
+#educationcolumn>div{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    'a1 a2'
+    'b1 b2'
+    'c1 c2';
+}
+#educationcolumn>div:nth-child(1)>div:nth-child(1){
+    grid-area: a1;
+}
+#educationcolumn>div:nth-child(1)>div:nth-child(2){
+    grid-area: a2;
+}
+#educationcolumn>div:nth-child(2)>div:nth-child(1){
+    grid-area: b1;
+}
+#educationcolumn>div:nth-child(2)>div:nth-child(2){
+    grid-area: b2;
+}
+#educationcolumn>div:nth-child(3)>div:nth-child(1){
+    grid-area: c1;
+}
+#educationcolumn>div:nth-child(3)>div:nth-child(2){
+    grid-area: c2;
+}
 #skills{
     width: 100%;
     padding: 80px 0px;
@@ -179,9 +321,6 @@ html{
     margin: auto;
     margin-bottom: 30px;
     color: rgb(7, 165, 152);
-    /* background: linear-gradient(90deg,violet,red);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
     font-size: 35px;
 }
 #skills>div{
@@ -193,11 +332,14 @@ html{
     gap: 30px;
 }
 #skills>div>div{
-    border: 1px solid violet;
+    /* border: 1px solid rgb(6, 177, 162); */
     text-align: center;
+    background-color: rgba(6, 177, 163, 0.08);
 }
 #skills>div>div:hover{
-    background-color: rgba(125, 204, 204, 0.192);
+    background-color: rgba(7, 165, 152, 0.249);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 #skills>div>div>img{
     width: 70%;
@@ -225,10 +367,7 @@ html{
 }
 #projects{
     width: 100%;
-    padding: 80px 7px;
-    margin: auto;
-    margin-left: -6px;
-    background-color: whitesmoke;
+    padding: 80px 0px;
 }
 #projects>h1{
     width: 90%;
@@ -248,7 +387,6 @@ html{
     height:auto;
     border-radius: 18px;
     padding-bottom: 20px;
-    /* background-color: rgba(245, 245, 245, 0.626); */
     background-color: rgba(248, 248, 248, 0.842);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -364,7 +502,6 @@ html{
     padding: 10px;
 }
 #contact>div>div>button{
-    /* width: 580px; */
     margin-top: 10px;
     padding: 14px 235px;
     font-family: 'Montserrat', sans-serif;

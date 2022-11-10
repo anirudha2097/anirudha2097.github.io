@@ -19,26 +19,43 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <div id="logo">
-            <img src="images/Logo.jpg" alt="">
-        </div>
-        <div class="container">
-            <h3 class="home"><a id="1" href="#home" onclick="navbtn(id)">HOME</a></h3>
-            <h3 class="aboutme"><a id="2" href="#aboutme" onclick="navbtn(id)">ABOUT ME</a></h3>
-            <h3 class="skills"><a id="3" href="#skills" onclick="navbtn(id)">SKILLS</a></h3>
-            <h3 class="projects"><a id="4" href="#projects" onclick="navbtn(id)">PROJECTS</a></h3>
-            <h3 class="contact"><a id="5" href="#contact" onclick="navbtn(id)">CONTACT</a></h3>
-            <h3><a id="6" href="files/Anirudha-Desai-Resume.pdf" download>RESUME</a></h3>
-        </div>
-    </nav>
-    
+    <section class="hero">
+        <header class="header">
+            <nav id="navbar">
+                <div id="logo">
+                    <img src="images/Logo.jpg" alt="">
+                </div>
+                <div class="nav_icon">
+                    <div class="line"></div>
+                </div>
+                <div class="container">
+                    <ul class="nav_menu">
+                        <li class="nav_list"><a href="#home" class="nav_link home active">HOME</a></li>
+                        <li class="nav_list"><a href="#aboutme" class="nav_link">ABOUT ME</a></li>
+                        <li class="nav_list"><a href="#education" class="nav_link">EDUCATION</a></li>
+                        <li class="nav_list"><a href="#skills" class="nav_link">SKILLS</a></li>
+                        <li class="nav_list"><a href="#projects" class="nav_link">PROJECTS</a></li>
+                        <li class="nav_list"><a href="#contact" class="nav_link">CONTACT</a></li>
+                        <li><a id="6" href="files/Anirudha-Desai-Resume.pdf" download>RESUME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
     <!-- Home -->
     <section id="home">
         <div>
             <h3>WELCOME TO MY WORLD</h3>
             <p>Hi, I'm <span>Anirudha Desai</span></p>
-            <h2>a Java Backend Developer</h2>
+            <div class="wrapper">
+                <!-- <div class="static-txt">I'm a</div> -->
+                <ul class="dynamic-txt">
+                    <li><span>Developer</span></li>
+                    <li><span>Problem Solver</span></li>
+                    <li><span>Tech-Enthusiast</span></li>
+                    <li><span>Programmer</span></li>
+                </ul>
+            </div>
         </div>
         <div>
             <img src="/images/Anirudha Closeup.jpg" alt="">
@@ -100,12 +117,44 @@
         <a id="downloadResume" href="files/Anirudha-Desai-Resume.pdf" download>Download Resume</a>
     </section>
 
+    <!-- Education -->
+    <section id="education">
+        <h1>Education</h1>
+        <div id="educationcolumn">
+            <div>
+                <div>
+                    <h2>Java Developement</h2>
+                    <p>Masai School, Bengaluru</p>
+                    <p>May 2022 - Dec 2022</p>
+                </div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div>
+                    <h2>Bachelor of Arts</h2>
+                    <p>Chhatrapati Shivaji University, Kolhapur</p>
+                    <p>June 2018 - Mar 2021</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>HSC</h2>
+                    <p>Private Jr. Collage, Kolhapur</p>
+                    <p>July 2016 - Mar 2018</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </div>
+    </section>
     <!-- Skills Sections -->
     <section id="skills">
         <h1>Skills</h1>
-        <div>
-
-        </div>
         <div>
             <div>
                 <img src="images/java.png" alt="">
