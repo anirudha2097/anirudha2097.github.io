@@ -257,15 +257,15 @@ section:nth-child(1){
 #education>div:nth-child(3){
     width: 35px;
     position: absolute;
-    top: 1280px;
+    top: 1610px;
     left: 613px;
     font-size: 150px;
 }
 #education>div:nth-child(3)>p{
     margin-top: -40px;
-    margin-bottom: -20px;
-    color: rgb(7, 165, 152);
-    text-shadow: 2px 1px 20px rgb(3, 113, 104);
+    margin-bottom: -30px;
+    color: rgb(3, 113, 104);
+    text-shadow: 2px 1px 20px rgb(14, 122, 113);
 }
 #educationcolumn>div>div>h2{
     color: rgb(3, 113, 104);
@@ -333,8 +333,10 @@ section:nth-child(1){
 }
 #skills>div>div{
     /* border: 1px solid rgb(6, 177, 162); */
+    padding: 15px 0px;
     text-align: center;
     background-color: rgba(6, 177, 163, 0.08);
+    border-radius: 10px;
 }
 #skills>div>div:hover{
     background-color: rgba(7, 165, 152, 0.249);
@@ -342,22 +344,22 @@ section:nth-child(1){
     transition: 0.3s;
 }
 #skills>div>div>img{
-    width: 70%;
+    width: 50%;
 }
 #skills>div>div:nth-child(3)>img{
-    width: 55%;
+    width: 40%;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 12px;
     filter: invert(100%);
     border-radius: 50%;
     background-color: rgb(57, 205, 205);
 }
 #skills>div>div:nth-child(4)>img{
-    width: 55%;
+    width: 40%;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 12px;
     filter: invert(100%);
     border-radius: 50%;
     background-color: rgb(201, 61, 201);
@@ -541,10 +543,14 @@ section:nth-child(1){
     font-size: 30px;
     cursor: pointer;
 }
-/* @media screen and (min-width:481px) and (max-width:768px) {
-    
+@media screen and (min-width:481px) and (max-width:768px) {
+
+#navbar{
+    width: 100%;
+    height: 40px;
+}
 }
 
 @media screen and (min-width:320px) and (max-width:480px) {
     
-} */
+}
