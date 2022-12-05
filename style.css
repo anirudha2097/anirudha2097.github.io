@@ -36,9 +36,6 @@ html{
     display: flex;
     justify-content: space-around;
 }
-#navbar .container li{
-    width: 13%;
-}
 #navbar .container li, #navbar .container li>a{
     font-size: 12px;
     font-weight: 500;
@@ -61,6 +58,9 @@ html{
     font-size: 13px;
     transition: 0.3s;
     font-weight: 600;
+}
+.checkbtn, #check{
+    display: none;
 }
 .sticky .home.active{
     font-size: 13px;
@@ -312,10 +312,6 @@ section:nth-child(1){
 #educationcolumn>div:nth-child(3)>div:nth-child(2){
     grid-area: c2;
 }
-#skills{
-    width: 100%;
-    padding: 80px 0px;
-}
 #skills>h1{
     width: 90%;
     margin: auto;
@@ -329,10 +325,9 @@ section:nth-child(1){
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: center;
-    gap: 30px;
+    gap: 45px;
 }
 #skills>div>div{
-    /* border: 1px solid rgb(6, 177, 162); */
     padding: 15px 0px;
     text-align: center;
     background-color: rgba(6, 177, 163, 0.08);
@@ -379,16 +374,16 @@ section:nth-child(1){
     font-size: 35px;
 }
 #projects>div{
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
-    gap:60px;
+    gap:100px;
 }
 #projects>div>div{
     height:auto;
     border-radius: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     background-color: rgba(248, 248, 248, 0.842);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -456,13 +451,6 @@ section:nth-child(1){
 #projects>div>div>button>i{
     font-size: 12px;
 }
-#projects>div>div:nth-child(2)>p:nth-child(4){
-    margin-top: 27px;
-}
-#contact{
-    width: 100%;
-    padding: 80px 0px;
-}
 #contact>h1{
     width: 90%;
     margin: auto;
@@ -525,6 +513,9 @@ section:nth-child(1){
     color: rgb(7, 165, 152);
     font-size: 20px;
 }
+#contact>div>div>div:nth-child(1)>i{
+    margin-top: -10px;
+}
 #socialMedia{
     width: 100%;
     padding: 60px 9px 60px 7px;
@@ -545,12 +536,581 @@ section:nth-child(1){
 }
 @media screen and (min-width:481px) and (max-width:768px) {
 
-#navbar{
-    width: 100%;
-    height: 40px;
-}
+    #navbar{
+        position:fixed;
+        top: 0px;
+        left: 0px;
+    }
+    #logo>img{
+        width:22%;
+    }
+    #navbar .container{
+        width: 100%;
+        margin-right: 30px;
+    }
+    #navbar .container ul{
+        width: 100%;
+        gap:3%;
+    }
+    #navbar .container li, #navbar .container li>a{
+        font-size: 10px;
+    }
+    #navbar .container li>a.active{
+        font-size: 10.5px;
+    }
+
+    #home{
+        margin-top: -170px;
+    }
+    #home>div>p:nth-child(2){
+        font-size: 27px;
+        margin-left: 2px;
+    }
+    #home>div>h3{
+        font-size: 15px;
+        margin-left: 3px
+    }
+    #home>div:nth-child(2){
+        width: 150px;
+        height: 180px;
+    }
+    #home>div>img{
+        width: 190px;
+        position: relative;
+        bottom: 40px;
+        right: 55px;
+    }
+    .dynamic-txt li{
+        font-size: 20px;
+    }
+    .dynamic-txt li span::after{
+        top: 0px;
+    }
+
+    section:nth-child(odd){
+        margin-left: -7.5px;
+        padding: 70px 7.5px;
+    }
+    #aboutme>h1{
+      font-size: 28px;
+    }
+    #aboutme>div>div:nth-child(1){
+        width: 150px;
+        height: 160px;
+    }
+    #aboutme>div>div>img{
+        width: 170px;
+        left: 12px;
+        bottom: 37px;
+    }
+    #aboutme>div>div:nth-child(2){
+        margin-left: -35px;
+        font-size: 12px;
+        line-height: 23px;
+    }
+    #aboutme>div>div:nth-child(2)>div>h2{
+        font-size: 18px;
+    }
+    #aboutme>div>div:nth-child(2)>div:nth-child(2){
+        width: 100%;
+        font-size: 9.4px;
+        gap: 2px;
+        line-height: 15px;
+    }
+    #aboutme>div>div>div>table tr>td>i{
+        font-size: 11px;
+    }
+    #downloadResume{
+        padding: 10px 14px;
+        font-size: 9px;
+        margin-left: 275px;
+    }
+    #gitstats>p>img{
+        width: 320px;
+        margin-top: -60px;
+    }
+    #gitstats>p:nth-child(1)>img{
+        margin-right: -60px;
+    }
+
+    #education>h1{
+        font-size: 28px;
+    }
+    #education>div:nth-child(3){
+        top: 1225px;
+        left: 366px;
+    }
+    #education>div:nth-child(3)>p:nth-child(1){
+        margin-top:  -30px;
+    }
+    #education>div:nth-child(3)>p:nth-child(2){
+        margin-top:  -70px;
+    }
+    #education>div:nth-child(3)>p:nth-child(3){
+        margin-top:  -75px;
+    }
+    #educationcolumn>div>div>h2{
+        font-size: 17px;
+    }
+    #educationcolumn>div>div>p{
+        font-size: 14px;
+    }
+    #educationcolumn>div:nth-child(odd)>div:nth-child(1){
+        margin-left: 60px;
+        line-height: 10px;
+    }
+    #educationcolumn>div:nth-child(even)>div:nth-child(2){
+        margin-left: 55px;
+        line-height: 10px;
+    }
+    #educationcolumn>div{
+        width: 100%;
+    }
+
+    #skills>h1{
+        font-size: 28px;
+    }
+    #skills>div{
+        width: 85%; 
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+    }
+    #skills>div>div{
+        padding: 15px 0px;
+    }
+    #skills>div>div>img{
+        width: 45%;
+    }
+    #skills>div>div:nth-child(3)>img{
+        width: 35%;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    #skills>div>div:nth-child(4)>img{
+        width: 35%;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    #skills>div>div>h2{
+        font-size: 18px;
+    }
+
+    #projects{
+        padding: 70px 0px;
+    }
+    #projects>h1{
+        font-size: 28px;
+    }
+    #projects>div{
+        width: 85%;
+        gap:40px;
+    }
+    #projects>div>div{
+        height:auto;
+        padding-bottom: 30px;
+    }
+    #projects>div>div>img{
+        height: 38%;
+    }
+    #projects>div>div>h2{
+        font-size: 18px;
+    }
+    #projects>div>div>p{
+        font-size: 13px;
+    }
+    #projects>div>div>p:nth-child(4){
+        font-size: 15px;
+    }
+    #projects>div>div>p>i{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    #projects>div>div>button:nth-child(6){
+        margin-left: 20px;
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+    #projects>div>div>button:nth-child(7){
+        margin-left: 100px;
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+    #projects>div>div>button>i{
+        font-size: 12px;
+    }
+    #projects>div>div:nth-child(2)>p:nth-child(4){
+        margin-top: 10px;
+    }
+
+    #contact>h1{
+        font-size: 28px;
+    }
+    #contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2){
+        width: 165px;
+        height: 15px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #contact>div>div>input:nth-child(4){
+        width: 352px;
+        height: 15px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #contact>div>div>textarea:nth-child(6){
+        width: 352px;
+        max-width: 352px;
+        min-width: 352px;
+        height: 100px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #contact>div>div>button{
+        margin-top: 10px;
+        padding: 14px 135px;
+        font-size: 12px;
+    }
+    #contact>div>div>div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+    }
+    #contact>div>div>div>i{
+        font-size: 13px;
+    }
+    #contact>div>div>div:nth-child(1)>i{
+        margin-top: -10px;
+    }
+    #socialMedia{
+        padding: 30px 9px 30px 7px;
+    }
+    #socialMedia>i{
+        font-size: 25px;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:480px) {
+    section:nth-child(odd){
+        padding: 30px 7px;
+        margin-left: -7.5px;
+    }
+    #logo{
+        width: 50%;
+        margin: auto;
+        margin-left: 80px;
+        text-align: center;
+    }
+    /* #navbar .container{
+        width: 70%;
+        margin-right: 0%;
+        display: none;
+        justify-content: space-around;
+    } */
+    .checkbtn{
+        display:block;
+        margin-right: -260px;
+        color: rgb(3, 113, 104);
+        font-size: 18px;
+    }
+
+    .container .nav_menu{
+        width: 100%;
+        height: 70vh;
+        position: fixed;
+        flex-direction: column;
+        background-color: whitesmoke;
+        top: 45px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .container .nav_menu>li{
+        display: block;
+        margin-bottom: -70px;
+    }
     
+    #check:checked ~ .container .nav_menu{
+        margin-left: -45px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        left: 0;
+    }
+
+    #home{
+        margin-top: -60px;
+        padding: 10px 0px;
+        margin-bottom: -100px;
+    }
+    #home>div>p:nth-child(2){
+        font-size: 25px;
+        margin-left: 3px;
+    }
+    #home>div>h3{
+        font-size: 15px;
+    }
+    #home>div:nth-child(2){
+       display: none;
+    }
+    #home>div>img{
+        display: none;
+    }
+    .wrapper .dynamic-txt{
+        margin-top: -10px;
+    }
+    .dynamic-txt li{
+        font-size: 18px;
+    }
+    .dynamic-txt li span::after{
+        top: 0px;
+    }
+
+    #aboutme>h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    #aboutme>div{
+        display: grid;
+        gap: 50px;
+    }
+    #aboutme>div>div:nth-child(1){
+        width: 150px;
+        height: 164px;
+        margin: auto;
+        margin-top: 0px; 
+    }
+    #aboutme>div>div>img{
+        position: static;
+        width: 150px;
+        border-radius: 5px;
+        bottom: 20px;
+        left: 8px;
+    }
+    #aboutme>div>div:nth-child(2){
+        width: 100%;
+        font-size: 12px;
+        line-height: 21px;
+    }
+    #aboutme>div>div:nth-child(2)>div>h2{
+        font-size: 17px;
+    }
+    #aboutme>div>div:nth-child(2)>div:nth-child(2){
+        display: grid;
+        gap: 0px;
+        line-height: 20px;
+    }    
+    #aboutme>div>div>div>table tr>td{
+        font-size: 11px;
+    }
+    #aboutme>div>div>div>table tr>td:nth-child(2){
+        font-weight: 600;
+    }
+    #aboutme>div>div>div>table tr>td>i{
+        font-size: 12px;
+        margin-right: -5px;
+    }
+    #downloadResume{
+        width: 100px;
+        margin-left: 145px;
+        padding: 10px 10px;
+        font-size: 9px;
+    }
+
+    #gitstats>p{
+        text-align: center;
+    }
+    #gitstats>p>img{
+        width: 280px;
+        margin-top: -70px;
+    }
+    #gitstats>p:nth-child(1)>img{
+        margin-right: 0px;
+    }
+
+    #education{
+        padding: 50px 0px;
+    }
+    #education>h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    #education>div:nth-child(3){
+        width: 35px;
+        position: absolute;
+        top: 1510px;
+        left: 71px;
+        font-size: 100px;
+    }
+    #education>div:nth-child(3)>p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #education>div:nth-child(3)>p:nth-child(1){
+        margin-top: -47px;
+    }
+    #education>div:nth-child(3)>p:nth-child(2){
+        margin-top: -28px;
+    }
+    #education>div:nth-child(3)>p:nth-child(3){
+        margin-top: -6px;
+    }
+    #educationcolumn>div>div>h2{
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+    #educationcolumn>div>div>p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #educationcolumn>div>div>p:nth-child(2){
+        margin-bottom: -10px;
+    }
+    #educationcolumn>div>div:nth-child(1){
+        border-left: 2px solid rgb(3, 113, 104);
+        border-right: 0px;
+        padding: 0px 0px 0px 35px;
+    }
+    #educationcolumn>div:nth-child(2)>div:nth-child(2){
+        border-left: 2px solid rgb(3, 113, 104);
+        padding: 0px 0px 0px 35px;
+    }
+    #educationcolumn>div:nth-child(odd)>div:nth-child(1){
+        margin-left: 0px;
+        line-height: 22px;
+    }
+    #educationcolumn>div:nth-child(even)>div:nth-child(2){
+        margin-left: 0px;
+        line-height: 22px;
+    }
+    #educationcolumn>div{
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        'a1 a1'
+        'b2 b2'
+        'c1 c1';
+    }
+
+    #skills>h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    #skills>div{
+        width: 75%; 
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    #skills>div>div>h2{
+        font-size: 15px;
+    }
+
+    /* #projects{
+        width: 100%;
+        padding: 80px 0px;
+    } */
+    #projects>h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    #projects>div{
+        width: 75%;
+        grid-template-columns:  repeat(1, 1fr);
+        gap: 70px;
+    }
+    #projects>div>div{
+        height:auto;
+        border-radius: 15px;
+    }
+    #projects>div>div>img{
+        width: 100%;
+        height: 38%;
+    }
+    #projects>div>div>h2{
+        font-size: 15px;
+    }
+    #projects>div>div>p{
+        width: 85%;
+        font-size: 13px;
+    }
+    #projects>div>div>p:nth-child(4){
+        font-size: .9rem;
+    }
+    #projects>div>div>p>i{
+        font-size: 25px;
+    }
+    #projects>div>div>button{
+        padding: 7px 18px;
+        font-size: 11px;
+    }
+    #projects>div>div>button:nth-child(6){
+        margin-left: 22px;
+    }
+    #projects>div>div>button:nth-child(7){
+        margin-left: 80px;
+    }
+
+    #contact>h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    #contact>div{
+        width: 85%;
+        display: grid;
+        justify-content: space-between;
+    }
+    #contact>div>div>input, #contact>div>div>textarea{
+        margin-top: 6px;
+    }
+    #contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2){
+        width: 315px;
+        height: 14px;
+        font-size: 11px;
+    }
+    #contact>div>div>input:nth-child(4){
+        width: 315px;
+        height: 14px;
+        font-size: 11px;
+    }
+    #contact>div>div>textarea:nth-child(6){
+        width: 315px;
+        max-width: 315px;
+        min-width: 315px;
+        height: 100px;
+        font-size: 11px;
+    }
+    #contact>div>div>button{
+        width: 100%;
+        margin-top: 6px;
+        margin-bottom: 30px;
+        padding: 15px 100px;
+        font-size: 11.5px;
+    }
+    #contact>div:nth-child(2)>div{
+        margin-bottom: 20px;
+    }
+    #contact>div:nth-child(2)>div>div{
+        margin-bottom: -10px;
+    }
+    #contact>div>div>div{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    #contact>div>div>div>p{
+        font-size: 12px;
+    }
+    #contact>div>div>div>i{
+        font-size: 13px;
+    }
+    #contact>div>div>div:nth-child(1)>i{
+        margin-top: -10px;
+    }
+    #socialMedia{
+        padding: 20px 9px 20px 7px;
+    }
+    #socialMedia>i{
+        font-size: 20px;
+    }
 }
