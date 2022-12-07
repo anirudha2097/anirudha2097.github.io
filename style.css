@@ -816,12 +816,12 @@ section:nth-child(1){
 
     .container .nav_menu{
         width: 100%;
-        height: 70vh;
+        height: 85vh;
         position: fixed;
         flex-direction: column;
         background-color: whitesmoke;
         top: 45px;
-        left: -120%;
+        right: -110%;
         text-align: center;
         transition: all .5s;
     }
@@ -829,17 +829,15 @@ section:nth-child(1){
         display: block;
         margin-bottom: -70px;
     }
-    
     #check:checked ~ .container .nav_menu{
-        margin-left: -45px;
-        padding-right: 50px;
         padding-bottom: 60px;
-        left: 0;
+        right: 0;
     }
-
+    
     #home{
         margin-top: -60px;
-        padding: 10px 0px;
+        padding-top: 110px;
+        padding-bottom:  200px;
         margin-bottom: -100px;
     }
     #home>div>p:nth-child(2){
@@ -864,7 +862,9 @@ section:nth-child(1){
     .dynamic-txt li span::after{
         top: 0px;
     }
-
+    #aboutme{
+        padding-top: 100px;
+    }
     #aboutme>h1{
         font-size: 25px;
         text-align: center;
@@ -928,7 +928,8 @@ section:nth-child(1){
     }
 
     #education{
-        padding: 50px 0px;
+        padding-top: 180px;
+        padding-bottom: 180px;
     }
     #education>h1{
         text-align: center;
@@ -937,7 +938,7 @@ section:nth-child(1){
     #education>div:nth-child(3){
         width: 35px;
         position: absolute;
-        top: 1510px;
+        top: 2000px;
         left: 71px;
         font-size: 100px;
     }
@@ -993,6 +994,9 @@ section:nth-child(1){
         'c1 c1';
     }
 
+    #skills{
+        padding-top: 110px;
+    }
     #skills>h1{
         text-align: center;
         font-size: 25px;
@@ -1006,10 +1010,9 @@ section:nth-child(1){
         font-size: 15px;
     }
 
-    /* #projects{
-        width: 100%;
-        padding: 80px 0px;
-    } */
+    #projects{
+        padding-top: 100px;
+    }
     #projects>h1{
         text-align: center;
         font-size: 25px;
@@ -1051,6 +1054,9 @@ section:nth-child(1){
         margin-left: 80px;
     }
 
+    #contact{
+        padding-top: 80px;
+    }
     #contact>h1{
         text-align: center;
         font-size: 25px;

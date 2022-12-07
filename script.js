@@ -51,43 +51,6 @@ function SendMail(){
     })
 }
 
-
-function navbtn(id){
-    if(id=="1"){
-        document.getElementById("1").style.color="rgb(6, 177, 162)";
-        document.getElementById("2").style.color="black";
-        document.getElementById("3").style.color="black";
-        document.getElementById("4").style.color="black";
-        document.getElementById("5").style.color="black";
-    } else if(id=="2"){
-        document.getElementById("2").style.color="rgb(6, 177, 162)";
-        document.getElementById("1").style.color="black";
-        document.getElementById("3").style.color="black";
-        document.getElementById("4").style.color="black";
-        document.getElementById("5").style.color="black";
-    } else if(id=="3"){
-        document.getElementById("3").style.color="rgb(6, 177, 162)";
-        document.getElementById("2").style.color="black";
-        document.getElementById("1").style.color="black";
-        document.getElementById("4").style.color="black";
-        document.getElementById("5").style.color="black";
-    } else if(id=="4"){
-        document.getElementById("4").style.color="rgb(6, 177, 162)";
-        document.getElementById("2").style.color="black";
-        document.getElementById("3").style.color="black";
-        document.getElementById("1").style.color="black";
-        document.getElementById("5").style.color="black";
-    } else if(id=="5"){
-        document.getElementById("5").style.color="rgb(6, 177, 162)";
-        document.getElementById("2").style.color="black";
-        document.getElementById("3").style.color="black";
-        document.getElementById("4").style.color="black";
-        document.getElementById("1").style.color="black";
-    }
-} 
-
-
-
 let nav_icon = document.querySelector('.nav_icon');
 let line = document.querySelector('.line');
 let nav_menu = document.querySelector('.nav_menu');
@@ -142,3 +105,27 @@ window.addEventListener('scroll', ()=>{
         }
     });
 });
+
+
+
+function myfunc(){
+    
+    let sr = document.getElementById("check").checked;
+
+    if(sr){
+        document.getElementById("navMenu").style.right = "-110%";
+        document.getElementById("check").checked = false;
+    } else{
+        document.getElementById("navMenu").style.right = "0%";
+    }
+}
+
+function mycheck(){
+    let sr = document.getElementById("check").checked;
+
+    if(sr){
+        document.getElementById("navMenu").style.right = "0%";
+    } else{
+        document.getElementById("navMenu").style.right = "-110%";
+    }
+}
