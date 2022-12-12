@@ -261,12 +261,12 @@ section:nth-child(1){
     left: 613px;
     font-size: 150px;
 }
-#education>div:nth-child(3)>p{
+/* #education>div:nth-child(3)>p{
     margin-top: -40px;
     margin-bottom: -30px;
     color: rgb(3, 113, 104);
     text-shadow: 2px 1px 20px rgb(14, 122, 113);
-}
+} */
 #educationcolumn>div>div>h2{
     color: rgb(3, 113, 104);
 }
@@ -640,7 +640,7 @@ section:nth-child(1){
         top: 1305px;
         left: 366px;
     }
-    #education>div:nth-child(3)>p:nth-child(1){
+    /* #education>div:nth-child(3)>p:nth-child(1){
         margin-top:  -30px;
     }
     #education>div:nth-child(3)>p:nth-child(2){
@@ -648,7 +648,7 @@ section:nth-child(1){
     }
     #education>div:nth-child(3)>p:nth-child(3){
         margin-top:  -75px;
-    }
+    } */
     #educationcolumn>div>div>h2{
         font-size: 17px;
     }
@@ -935,7 +935,7 @@ section:nth-child(1){
         text-align: center;
         font-size: 25px;
     }
-    #education>div:nth-child(3){
+    /* #education>div:nth-child(3){
         width: 35px;
         position: absolute;
         top: 2000px;
@@ -954,7 +954,7 @@ section:nth-child(1){
     }
     #education>div:nth-child(3)>p:nth-child(3){
         margin-top: -6px;
-    }
+    } */
     #educationcolumn>div>div>h2{
         font-size: 15px;
         margin-bottom: -10px;
