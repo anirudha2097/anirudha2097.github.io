@@ -177,7 +177,7 @@ section:nth-child(1){
     display: flex;
     gap: 100px;
 }
-#aboutme>div>div:nth-child(1){
+#aboutme>div:nth-child(2)>div:nth-child(1){
     width: 220px;
     height: 250px;
     margin-top: 30px; 
@@ -875,15 +875,14 @@ section:nth-child(1){
     }
     #aboutme>div>div:nth-child(1){
         width: 150px;
-        height: 164px;
         margin: auto;
         margin-top: 0px; 
     }
     #aboutme>div>div>img{
         position: static;
-        width: 150px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
-        bottom: 20px;
         left: 8px;
     }
     #aboutme>div>div:nth-child(2){

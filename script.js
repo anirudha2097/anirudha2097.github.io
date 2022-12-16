@@ -18,7 +18,7 @@ document.getElementById("git2Button").addEventListener("click",function(){
     window.open("https://github.com/anirudha2097/fun-note-365", "_blank");
 })
 document.getElementById("deploy2Button").addEventListener("click",function(){
-    window.open("https://marvelous-wisp-ebed52.netlify.app/", "_blank");
+    window.open("https://coschedule-clone-anirudha2097.netlify.app/", "_blank");
 })
 
 document.getElementById("instagram").addEventListener("click",function(){
@@ -129,3 +129,5 @@ function mycheck(){
         document.getElementById("navMenu").style.right = "-110%";
     }
 }
+
+
