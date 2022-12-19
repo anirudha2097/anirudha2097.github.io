@@ -170,13 +170,20 @@ section:nth-child(1){
     color: rgb(7, 165, 152);
     font-size: 35px;
 }
-#aboutme>div{
+#aboutme>div:nth-child(2), #aboutme>div:nth-child(4){
     width: 90%;
     margin: auto;
     margin-top: 100px;
     display: flex;
     gap: 100px;
 }
+#aboutme>div:nth-child(5){
+    width: 90%;
+    margin-top: 30px;
+    background-color: white;
+    padding: 15px;
+}
+
 #aboutme>div:nth-child(2)>div:nth-child(1){
     width: 220px;
     height: 250px;
@@ -184,7 +191,7 @@ section:nth-child(1){
     border: 10px solid rgb(6, 177, 162);
     border-radius: 15px;
 }
-#aboutme>div>div>img{
+#aboutme>div:nth-child(2)>div>img{
     width: 250px;
     position: relative;
     bottom: 40px;
@@ -192,32 +199,32 @@ section:nth-child(1){
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
 }
-#aboutme>div>div:nth-child(2){
+#aboutme>div:nth-child(2)>div:nth-child(2){
     margin-top: -20px;
     margin-bottom: 30px;
     line-height: 35px;
 }
-#aboutme>div>div:nth-child(2)>div>h2{
+#aboutme>div:nth-child(2)>div:nth-child(2)>div>h2{
     font-weight: 600;
 }
-#aboutme>div>div:nth-child(2)>div>h2>span{
+#aboutme>div:nth-child(2)>div:nth-child(2)>div>h2>span{
     color: rgb(6, 177, 162);
 }
-#aboutme>div>div:nth-child(2)>div:nth-child(2){
+#aboutme>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
     display: flex;
     gap: 50px;
     line-height: 35px;
 }
-#aboutme>div>div:nth-child(2)>div>p>span{
+#aboutme>div:nth-child(2)>div:nth-child(2)>div>p>span{
     font-weight: 600;
     color: rgb(6, 177, 162);
     font-style: italic;
 }
 
-#aboutme>div>div>div>table tr>td:nth-child(2){
+#aboutme>div:nth-child(2)>div>div>table tr>td:nth-child(2){
     font-weight: 600;
 }
-#aboutme>div>div>div>table tr>td>i{
+#aboutme>div:nth-child(2)>div>div>table tr>td>i{
     font-size: 17px;
     color: rgb(6, 177, 162);
 }
@@ -238,6 +245,7 @@ section:nth-child(1){
     background-color: rgb(7, 165, 152);
     cursor: pointer;
 }
+
 #education{
     width: 100%;
     padding: 80px 0px;
@@ -374,7 +382,7 @@ section:nth-child(1){
     font-size: 35px;
 }
 #projects>div{
-    width: 85%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
@@ -407,6 +415,9 @@ section:nth-child(1){
     text-align: center;
     color: rgb(3, 113, 104);
 }
+#projects>div>div:nth-child(4)>h2{
+    width: 85%;
+}
 #projects>div>div>p{
     width: 85%;
     margin: auto;
@@ -414,6 +425,7 @@ section:nth-child(1){
 #projects>div>div>p:nth-child(3){
     text-align: justify;
 }
+
 #projects>div>div>p:nth-child(4){
     margin-top: 8px;
     font-size: 1.15rem;
@@ -429,6 +441,9 @@ section:nth-child(1){
 }
 #projects>div>div>p>i:nth-child(2){
     color: blue;
+}
+#projects>div>div:nth-child(3)>p>i:nth-child(2), #projects>div>div:nth-child(4)>p>i:nth-child(2){
+    color: gray;
 }
 #projects>div>div>p>i:nth-child(3){
     color: rgb(211, 211, 18);
@@ -594,30 +609,30 @@ section:nth-child(1){
     #aboutme>h1{
       font-size: 28px;
     }
-    #aboutme>div>div:nth-child(1){
+    #aboutme>div:nth-child(2)>div:nth-child(1){
         width: 150px;
         height: 160px;
     }
-    #aboutme>div>div>img{
+    #aboutme>div:nth-child(2)>div>img{
         width: 170px;
         left: 12px;
         bottom: 37px;
     }
-    #aboutme>div>div:nth-child(2){
+    #aboutme>div:nth-child(2)>div:nth-child(2){
         margin-left: -35px;
         font-size: 12px;
         line-height: 23px;
     }
-    #aboutme>div>div:nth-child(2)>div>h2{
+    #aboutme>div:nth-child(2)>div:nth-child(2)>div>h2{
         font-size: 18px;
     }
-    #aboutme>div>div:nth-child(2)>div:nth-child(2){
+    #aboutme>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
         width: 100%;
         font-size: 9.4px;
         gap: 2px;
         line-height: 15px;
     }
-    #aboutme>div>div>div>table tr>td>i{
+    #aboutme>div:nth-child(2)>div>div>table tr>td>i{
         font-size: 11px;
     }
     #downloadResume{
@@ -869,42 +884,42 @@ section:nth-child(1){
         font-size: 25px;
         text-align: center;
     }
-    #aboutme>div{
+    #aboutme>div:nth-child(2){
         display: grid;
         gap: 50px;
     }
-    #aboutme>div>div:nth-child(1){
+    #aboutme>div:nth-child(2)>div:nth-child(1){
         width: 150px;
         margin: auto;
         margin-top: 0px; 
     }
-    #aboutme>div>div>img{
+    #aboutme>div:nth-child(2)>div>img{
         position: static;
         width: 100%;
         height: 100%;
         border-radius: 5px;
         left: 8px;
     }
-    #aboutme>div>div:nth-child(2){
+    #aboutme>div:nth-child(2)>div:nth-child(2){
         width: 100%;
         font-size: 12px;
         line-height: 21px;
     }
-    #aboutme>div>div:nth-child(2)>div>h2{
+    #aboutme>div:nth-child(2)>div:nth-child(2)>div>h2{
         font-size: 17px;
     }
-    #aboutme>div>div:nth-child(2)>div:nth-child(2){
+    #aboutme>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
         display: grid;
         gap: 0px;
         line-height: 20px;
     }    
-    #aboutme>div>div>div>table tr>td{
+    #aboutme>div:nth-child(2)>div>div>table tr>td{
         font-size: 11px;
     }
-    #aboutme>div>div>div>table tr>td:nth-child(2){
+    #aboutme>div:nth-child(2)>div>div>table tr>td:nth-child(2){
         font-weight: 600;
     }
-    #aboutme>div>div>div>table tr>td>i{
+    #aboutme>div:nth-child(2)>div>div>table tr>td>i{
         font-size: 12px;
         margin-right: -5px;
     }
@@ -915,6 +930,17 @@ section:nth-child(1){
         font-size: 9px;
     }
 
+    .calendar{
+        font-size: 0.65rem;
+    }
+    .calendar span {
+        font-size: 0.7rem;
+    }
+    #gitstats{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
     #gitstats>p{
         text-align: center;
     }

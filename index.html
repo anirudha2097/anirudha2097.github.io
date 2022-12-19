@@ -17,6 +17,11 @@
             emailjs.init("wI7hDI-fRxLu8krW-");
         })();
     </script>  
+    <script
+        src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar.css" />
 </head>
 <body>
     <!-- Navbar -->
@@ -125,6 +130,10 @@
             <p><img src="https://github-readme-stats.vercel.app/api?username=anirudha2097&count_private=true" alt=""></p>
             <p><img src="https://github-readme-streak-stats.herokuapp.com?user=anirudha2097" alt=""></p>
         </div>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>        
     </section>
 
     <!-- Education -->
@@ -241,6 +250,36 @@
                 <button id="git2Button">Github <i class="fa-brands fa-github"></i></button>
                 <button id="deploy2Button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
+            <div>
+                <img src="images/MGNREGA.png" alt="MGNREGA Logo">
+                <h2>MGNREGA</h2>
+                <p>
+                    MNREGA is a scheme by which unskilled people of rural India are guaranteed to have 100 days of paid work. 
+                    Main objective of this project is to manage employments offered through this scheme.
+                </p>
+                <p><b>Tech Stacks:</b></p>
+                <p>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-solid fa-database"></i>
+                </p>
+                <button id="git3Button">Github <i class="fa-brands fa-github"></i></button>
+                <button id="deploy3Button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div>
+                <img src="images/Bus ticket reservation system.png" alt="Bus ticket reservation system">
+                <h2>Bus Ticket Reservation System</h2>
+                <p>
+                    It is a Online bus ticket reservation system. For customers to book ticket by their route. And it is also helpful to
+                    keep all the buses, customers record.
+                </p>
+                <p><b>Tech Stacks:</b></p>
+                <p>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-solid fa-database"></i>
+                </p>
+                <button id="git4Button">Github <i class="fa-brands fa-github"></i></button>
+                <button id="deploy4Button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
         </div>
     </section>
 
@@ -284,3 +323,9 @@
 </body>
 </html>
 <script src="script.js" ></script>
+<script>
+    GitHubCalendar(".calendar", "anirudha2097");
+
+    GitHubCalendar(".calendar", "anirudha2097", { responsive: true });
+</script>
+

@@ -21,6 +21,20 @@ document.getElementById("deploy2Button").addEventListener("click",function(){
     window.open("https://coschedule-clone-anirudha2097.netlify.app/", "_blank");
 })
 
+document.getElementById("git3Button").addEventListener("click",function(){
+    window.open("https://github.com/anirudha2097/proper-connection-614", "_blank");
+})
+document.getElementById("deploy3Button").addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1MeYImoHnZqWsqBluQcn6u17koC8yPY0N/view?usp=sharing", "_blank");
+})
+
+document.getElementById("git4Button").addEventListener("click",function(){
+    window.open("https://github.com/anirudha2097/oafish-chicken-4368", "_blank");
+})
+document.getElementById("deploy4Button").addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1JV1iJATCzmOab9kdg_a7Zgw0kYpxvbJn/view?usp=sharing", "_blank");
+})
+
 document.getElementById("instagram").addEventListener("click",function(){
     window.open("https://www.instagram.com/__anya_38/")
 })
