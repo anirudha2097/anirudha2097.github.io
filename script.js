@@ -36,15 +36,19 @@ document.getElementById("deploy4Button").addEventListener("click",function(){
 })
 
 document.getElementById("instagram").addEventListener("click",function(){
-    window.open("https://www.instagram.com/__anya_38/")
+    window.open("https://www.instagram.com/__anya_38/", "_blank")
 })
 
 document.getElementById("linkedin").addEventListener("click",function(){
-    window.open("https://www.linkedin.com/in/anirudhadesai/");
+    window.open("https://www.linkedin.com/in/anirudhadesai/", "_blank");
 })
 
 document.getElementById("github").addEventListener("click",function(){
-    window.open("https://github.com/anirudha2097");
+    window.open("https://github.com/anirudha2097", "_blank");
+})
+
+document.getElementById("downloadResume").addEventListener("click", function(){
+    window.open("https://drive.google.com/file/d/16b6lkjhxWxLzrBDZ2h4QqPEofbPDaCHs/view?usp=sharing", "_blank");
 })
 
 function SendMail(){
