@@ -1,0 +1,176 @@
+@media screen and (max-width:768px){
+
+    #navbar .container>ul>li, #navbar  .container>ul>li>a{
+        font-size: 9px;
+    }
+    #navbar .container li>a.active{
+        font-size: 9.5px;
+        color: rgb(6, 177, 162);    
+        transition: 0.3s;
+        font-weight: 600;
+    }
+    #home{
+        margin-top: -170px;
+    }
+    #home>div:nth-child(2){
+        width: 150px;
+        height: 160px;
+    }
+    #intro{
+        margin-top: 70px;
+    }
+    #home>div>img{
+        width: 160px;
+        position: relative;
+        bottom: 30px;
+        right: 30px;
+    }
+    #home>div>p:nth-child(2){
+        font-size: 27px;
+        margin-left: 2px;
+    }
+    #home>div>h3{
+        font-size: 15px;
+        margin-left: 3px
+    }
+    .dynamic-txt li{
+        font-size: 20px;
+    }
+    .dynamic-txt li span::after{
+        top: 0px;
+    }
+
+    #aboutme>h1, #education>h1, #skills>h1, #projects>h1, #contact>h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    #aboutme>div:nth-child(2)>div:nth-child(1){
+        width: 150px;
+        height: 160px;
+    }
+    #aboutme>div:nth-child(2)>div>img{
+        width: 170px;
+        left: 12px;
+        bottom: 37px;
+    }
+    #aboutme>div:nth-child(2)>div:nth-child(2){
+        margin-left: -35px;
+        font-size: 12px;
+        line-height: 23px;
+    }
+    #aboutme>div:nth-child(2)>div:nth-child(2)>div>h2{
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: -10px;
+    }
+    #aboutme>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+        line-height: 23px;
+    }
+    #aboutme>div:nth-child(2)>div>div>table tr>td:nth-child(2), #aboutme>div:nth-child(2)>div>div>table tr>td:nth-child(3), #aboutme>div:nth-child(2)>div>div>table tr>td>i{
+        font-size: 11px;
+    }
+    #downloadResume{
+        padding: 10px 14px;
+        font-size: 11px;
+        margin-left: 39%;
+    }
+    #gitstats{
+        display: flex;
+        flex-direction: column;
+    }
+    #gitstats>p>img{
+        width: 320px;
+        margin-top: -60px;
+        margin-bottom: -20px;
+    }
+
+    #educationcolumn>div>div>h2{
+        font-size: 17px;
+        line-height: 23px;
+    }
+    #educationcolumn>div>div>p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #skills>div{
+        width: 80%;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+    }
+    #skills>div>div>h2{
+        font-size: 18px;
+    }
+    #skills>div>div:nth-child(3)>img{
+        width: 35%;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+    #skills>div>div:nth-child(4)>img{
+        width: 35%;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    #projects>div{
+        width: 85%;
+        gap:40px;
+    }
+    #projects>div>div{
+        height: 90%;
+        margin-bottom: 20px;
+    }
+    #projects>div>div>p>i{
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    #projects>div>div>img{
+        height: 38%;
+    }
+    #projects>div>div>h2{
+        font-size: 18px;
+    }
+    #projects>div>div>p{
+        font-size: 13px;
+    }
+    #projects>div>div>div>button{
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    #contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2){
+        width: 43%;
+        height: 15px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #contact>div>div>input:nth-child(4){
+        width: 93%;
+        height: 15px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #contact>div>div>textarea:nth-child(6){
+        width: 93%;
+        max-width: 93%;
+        min-width: 93%;
+        height: 100px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #contact>div>div>button{
+        margin-top: 10px;
+        padding: 14px 110px;
+        font-size: 11px;
+    }
+
+    #contact>div>div>div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+    }
+    #contact>div>div>div>i{
+        font-size: 13px;
+    }
+}

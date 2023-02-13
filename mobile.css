@@ -1,0 +1,205 @@
+@media screen and (max-width:480px){
+    .checkbtn{
+        display:block;
+        margin-right: -80%;
+        margin-left: 20%;
+        color: rgb(3, 113, 104);
+        font-size: 100%;
+    }
+    .container .nav_menu{
+        /* width: 50%; */
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        background-color: whitesmoke;
+        top: 45px;
+        right: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .container .nav_menu>li{
+        display: block;
+    }
+    
+    #check:checked ~ .container .nav_menu{
+        padding-bottom: 60px;
+        padding-right: 2%;
+        right: 0%;
+    }
+    #navbar{
+        justify-content: center;
+    }
+    #logo{
+        width: 50%;
+    }
+ 
+    #home>div>p:nth-child(2){
+        font-size: 25px;
+        margin-left: 3px;
+    }
+    #home>div>h3{
+        font-size: 15px;
+    }
+    #home>div:nth-child(2){
+        display: none;
+     }
+    #home>div>img{
+        display: none;
+    }
+
+    #aboutme>div:nth-child(2){
+        display: grid;
+        gap: 20px;
+    }
+    #aboutme>div:nth-child(2)>div:nth-child(1){
+        width: 150px;
+        height: auto;
+        margin: auto;
+        margin-top: 0px; 
+    }
+    #aboutme>div:nth-child(2)>div>img{
+        position: static;
+        width: 100%;
+        margin-bottom: -5px;
+        border-radius: 5px;
+    }
+    #aboutme>div:nth-child(2)>div:nth-child(2){
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #downloadResume{
+        margin-left: 35%;
+        padding: 10px 10px;
+        font-size: 9px;
+    }
+    .calendar{
+        font-size: 0.65rem;
+    }
+    .calendar span {
+        font-size: 0.7rem;
+    }
+    #gitstats>p>img{
+        width: 90%;
+        margin: auto;
+        margin-top: -70px;
+    }
+
+    #educationcolumn>div{
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        'a1 a1'
+        'b2 b2'
+        'c1 c1';
+    }
+    #educationcolumn>div>div>h2{
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+    #educationcolumn>div>div>p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #educationcolumn>div>div:nth-child(1){
+        border-left: 2px solid rgb(3, 113, 104);
+        border-right: 0px;
+        padding: 0px 0px 0px 35px;
+    }
+    #educationcolumn>div:nth-child(2)>div:nth-child(2){
+        border-left: 2px solid rgb(3, 113, 104);
+        padding: 0px 0px 0px 35px;
+    }
+    #educationcolumn>div:nth-child(odd)>div:nth-child(1){
+        margin-left: 0px;
+        line-height: 22px;
+    }
+    #educationcolumn>div:nth-child(even)>div:nth-child(2){
+        margin-left: 0px;
+        line-height: 22px;
+    }
+
+    #skills>div{
+        width: 75%; 
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    #skills>div>div>h2{
+        font-size: 15px;
+    }
+
+    #projects>div{
+        width: 75%;
+        grid-template-columns:  repeat(1, 1fr);
+        gap: 70px;
+    }
+    #projects>div>div{
+        height:auto;
+        border-radius: 15px;
+    }
+    #projects>div>div>img{
+        width: 100%;
+        height: 38%;
+    }
+    #projects>div>div>h2{
+        font-size: 15px;
+    }
+    #projects>div>div>p{
+        width: 85%;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    #projects>div>div>h4{
+        font-size: 0.8rem;
+    }
+    #projects>div>div>p>i{
+        font-size: 20px;
+    }
+    #projects>div>div>div{
+        margin-bottom: 5%;
+        align-items: center;
+        align-items: center;
+        gap: 10%;
+    }
+    #projects>div>div>div>button{
+        padding: 3% 4%;
+        font-size: 10px;
+    }
+    #contact{
+        padding-bottom: 10px;
+    }
+    #contact>div{
+        width: 85%;
+        display: grid;
+        justify-content: space-between;
+    }
+    #contact>div>div>input, #contact>div>div>textarea{
+        margin-top: 6px;
+    }
+    #contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2){
+        width: 93%;
+        height: 14px;
+        font-size: 11px;
+    }
+    #contact>div>div>button{
+        margin-top: 6px;
+        margin-bottom: 30px;
+        padding: 3% 39%;
+        font-size: 10px;
+    }
+    #contact>div>div>div>p{
+        font-size: 12px;
+    }
+    #contact>div>div>div:nth-child(1)>i{
+        margin-top: -10px;
+    }
+
+    #socialMedia{
+        padding: 20px 9px 20px 7px;
+    }
+    #socialMedia>i{
+        font-size: 20px;
+    }
+}
