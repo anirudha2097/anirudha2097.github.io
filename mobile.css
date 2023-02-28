@@ -127,6 +127,12 @@
     #projects>div:nth-child(2)>div{
         height:auto;
         border-radius: 15px;
+        margin-bottom: 15%;
+        padding-bottom: 20%;
+    }
+    #projects>div:nth-child(2)>div:nth-child(3), #projects>div:nth-child(2)>div:nth-child(4){
+        margin-bottom: 5%;
+        padding-bottom: 8%;
     }
     #projects>div:nth-child(2)>div>img{
         width: 100%;

@@ -153,7 +153,12 @@
     }
     #projects>div:nth-child(2)>div{
         height: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 25%;
+        padding-bottom: 15%;
+    }
+    #projects>div:nth-child(2)>div:nth-child(3), #projects>div:nth-child(2)>div:nth-child(4){
+        padding-bottom: 10%;
+        margin-bottom: 30%;
     }
     #projects>div:nth-child(2)>div>p>i{
         font-size: 22px;

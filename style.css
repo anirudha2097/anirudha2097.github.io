@@ -422,18 +422,24 @@ section:nth-child(odd){
     margin: auto;
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
-    gap:70px;
+    gap: 100px;
 }
 #projects>div:nth-child(2)>div{
     height: 100%;
     border-radius: 18px;
-    padding-bottom: 40px;
+    padding-bottom: 1%;
+    margin-bottom: 30%;
     background-color: rgba(248, 248, 248, 0.842);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 0.9rem;
+}
+#projects>div:nth-child(2)>div:nth-child(3), #projects>div:nth-child(2)>div:nth-child(4){
+    padding-bottom: 1%;
+    margin-bottom: 20%;
 }
 #projects>div:nth-child(2)>div>img{
     width: 100%;
-    height: 48%;
+    height: 40%;
     margin: auto;
     padding-top: 10px;
     background-color: white;
@@ -444,12 +450,13 @@ section:nth-child(odd){
 #projects>div:nth-child(2)>div:nth-child(2)>img{
     background-color: rgba(245, 245, 245, 0.626);
 }
-#projects>div:nth-child(2)>div>h2{
+#projects>div:nth-child(2)>div>h3{
     margin:auto;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     color: rgb(3, 113, 104);
+    font-size: 1.5em;
 }
 #projects>div:nth-child(2)>div:nth-child(4)>h2{
     width: 85%;
@@ -457,6 +464,7 @@ section:nth-child(odd){
 #projects>div:nth-child(2)>div>p{
     width: 85%;
     margin: auto;
+    font-size: 1.1em;
 }
 #projects>div:nth-child(2)>div>p:nth-child(3){
     text-align: justify;
@@ -467,9 +475,10 @@ section:nth-child(odd){
     margin-bottom: 1%;
     margin-left: 8%;
     color: rgb(3, 113, 104);
+    font-size: 1.1em;
 }
 #projects>div:nth-child(2)>div>p>i{
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 8px;
     margin-right: 15px;
     /* align-items: center; */
@@ -498,8 +507,8 @@ section:nth-child(odd){
     margin-bottom: 15%;
 }
 #projects>div:nth-child(2)>div>div>a{
-    padding:8px 14px;
-    font-size: 14px;
+    padding: 2.5% 5%;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(7, 165, 152);
     color: white;
