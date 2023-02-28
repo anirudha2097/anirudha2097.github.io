@@ -146,10 +146,10 @@
         width: 80%;
     }
 
-    #projects>div{
+    #projects>div:nth-child(2){
         width: 85%;
         margin: auto;
-        
+        gap: 30px;
     }
     #projects>div:nth-child(2)>div{
         height: 90%;
