@@ -73,17 +73,6 @@
         padding: 10px 10px;
         font-size: 9px;
     }
-    .calendar{
-        font-size: 0.65rem;
-    }
-    .calendar span {
-        font-size: 0.7rem;
-    }
-    #gitstats>p>img{
-        width: 90%;
-        margin: auto;
-        margin-top: -70px;
-    }
 
     #educationcolumn>div{
         width: 70%;
@@ -121,52 +110,73 @@
         line-height: 22px;
     }
 
-    #skills>div{
+    #skills>div:nth-child(2), #tools>div:nth-child(2){
         width: 75%; 
         grid-template-columns: repeat(2,1fr);
         gap: 30px;
     }
-    #skills>div>div>h2{
+    #skills>div:nth-child(2)>div>h2, #tools>div:nth-child(2)>div>h2{
         font-size: 15px;
     }
-
+   
     #projects>div{
         width: 75%;
         grid-template-columns:  repeat(1, 1fr);
         gap: 70px;
     }
-    #projects>div>div{
+    #projects>div:nth-child(2)>div{
         height:auto;
         border-radius: 15px;
     }
-    #projects>div>div>img{
+    #projects>div:nth-child(2)>div>img{
         width: 100%;
         height: 38%;
     }
-    #projects>div>div>h2{
+    #projects>div:nth-child(2)>div>h2{
         font-size: 15px;
     }
-    #projects>div>div>p{
+    #projects>div:nth-child(2)>div>p{
         width: 85%;
         font-size: 13px;
         line-height: 17px;
     }
-    #projects>div>div>h4{
+    #projects>div:nth-child(2)>div>h4{
         font-size: 0.8rem;
     }
-    #projects>div>div>p>i{
+    #projects>div:nth-child(2)>div>p>i{
         font-size: 20px;
     }
-    #projects>div>div>div{
+    #projects>div:nth-child(2)>div>div{
         margin-bottom: 5%;
         align-items: center;
         align-items: center;
         gap: 10%;
     }
-    #projects>div>div>div>button{
-        padding: 3% 4%;
-        font-size: 10px;
+    #projects>div:nth-child(2)>div>div>a{
+        margin-bottom: 10%;
+        padding: 2% 3%;
+        font-size: 9px;
     }
+    #projects>div:nth-child(3)>div:nth-child(2){
+        width: 100%;
+    }
+    .calendar{
+        font-size: 0.65rem;
+    }
+    .calendar span {
+        font-size: 0.7rem;
+    }
+    #gitstats{
+        width: 100%;
+        margin-top: 15%;
+        margin-bottom: -15%;
+    }
+    #gitstats>p>img{
+        width: 90%;
+        margin: auto;
+    }
+
+
     #contact{
         padding-bottom: 10px;
     }
@@ -178,15 +188,23 @@
     #contact>div>div>input, #contact>div>div>textarea{
         margin-top: 6px;
     }
-    #contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2){
-        width: 93%;
+    #contact>div>div>input:nth-child(1),#contact>div>div>input:nth-child(2), #contact>div>div>input:nth-child(4){
+        width: 100%;
         height: 14px;
         font-size: 11px;
+    }
+    #contact>div>div>textarea:nth-child(6){
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        /* height: 100px;
+        padding: 8px;
+        font-size: 11px; */
     }
     #contact>div>div>button{
         margin-top: 6px;
         margin-bottom: 30px;
-        padding: 3% 39%;
+        padding: 3% 46%;
         font-size: 10px;
     }
     #contact>div>div>div>p{

@@ -251,17 +251,7 @@ section:nth-child(odd){
     font-size: 14px;
     color: rgb(6, 177, 162);
 }
-#gitstats{
-    margin: auto;
-}
-#gitstats>p{
-    margin: auto;
-    text-align: center;
-}
-#gitstats>p>img{
-    width: 90%;
-    margin-right: 10%;
-}
+
 
 #downloadResume{
     margin-left: 33%;
@@ -356,49 +346,46 @@ section:nth-child(odd){
 #educationcolumn>div:nth-child(3)>div:nth-child(2){
     grid-area: c2;
 }
-#skills{
+#skills, #tools{
     width: 95vw;
     margin: auto;
 }
-#skills>h1{
+#skills>h1, #tools>h1{
     width: 90%;
     margin: auto;
     margin-bottom: 30px;
     color: rgb(7, 165, 152);
     font-size: 35px;
 }
-#skills>div{
-    width: 90%;
+#skills>div:nth-child(2), #tools>div:nth-child(2){
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: center;
     gap: 45px;
 }
-#skills>div>div{
+#skills>div:nth-child(2)>div, #tools>div:nth-child(2)>div{
     padding: 15px 0px;
     text-align: center;
     background-color: rgba(6, 177, 163, 0.08);
     border-radius: 10px;
 }
-#skills>div>div:hover{
+#skills>div:nth-child(2)>div:hover, #tools>div:nth-child(2)>div:hover{
     background-color: rgba(7, 165, 152, 0.249);
     transform: scale(1.1);
     transition: 0.3s;
 }
-#skills>div>div>img{
+#skills>div:nth-child(2)>div>img, #tools>div:nth-child(2)>div>img{
     width: 50%;
 }
-#skills>div>div:nth-child(3)>img{
-    width: 40%;
+#skills>div:nth-child(2)>div:nth-child(3)>img{
+    width: 35%;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 12px;
-    filter: invert(100%);
-    border-radius: 50%;
-    background-color: rgb(57, 205, 205);
 }
-#skills>div>div:nth-child(4)>img{
+#skills>div:nth-child(2)>div:nth-child(4)>img{
     width: 40%;
     margin: auto;
     margin-top: 15px;
@@ -406,10 +393,31 @@ section:nth-child(odd){
     filter: invert(100%);
     border-radius: 50%;
     background-color: rgb(201, 61, 201);
+
 }
-#skills>div>div>h2{
+#tools>div:nth-child(2)>div>h2{
     color: rgb(3, 113, 104);
 }
+#tools>div:nth-child(2)>div:nth-child(1)>img, #tools>div:nth-child(2)>div:nth-child(5)>img{
+    mix-blend-mode: multiply;
+}
+#tools>div:nth-child(2)>div:nth-child(5)>img{
+    width: 45%;
+    margin: auto;
+    margin-top: 15px;
+}
+#gitstats{
+    width: 90%;
+    margin: auto;
+    margin-top: 4%;
+}
+#gitstats>p{
+    text-align: center;
+}
+#gitstats>p>img{
+    width: 35%;
+}
+
 #projects{
     width: 95vw;
     margin: auto;
@@ -429,14 +437,14 @@ section:nth-child(odd){
     grid-template-columns:  repeat(2, 1fr);
     gap:100px;
 }
-#projects>div>div{
-    height:auto;
+#projects>div:nth-child(2)>div{
+    height: 100%;
     border-radius: 18px;
     padding-bottom: 40px;
     background-color: rgba(248, 248, 248, 0.842);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#projects>div>div>img{
+#projects>div:nth-child(2)>div>img{
     width: 100%;
     height: 48%;
     margin: auto;
@@ -446,71 +454,76 @@ section:nth-child(odd){
     border-top-right-radius: 18px;
     border-bottom: 1px solid gainsboro;
 }
-#projects>div>div:nth-child(2)>img{
+#projects>div:nth-child(2)>div:nth-child(2)>img{
     background-color: rgba(245, 245, 245, 0.626);
 }
-#projects>div>div>h2{
+#projects>div:nth-child(2)>div>h2{
     margin:auto;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     color: rgb(3, 113, 104);
 }
-#projects>div>div:nth-child(4)>h2{
+#projects>div:nth-child(2)>div:nth-child(4)>h2{
     width: 85%;
 }
-#projects>div>div>p{
+#projects>div:nth-child(2)>div>p{
     width: 85%;
     margin: auto;
 }
-#projects>div>div>p:nth-child(3){
+#projects>div:nth-child(2)>div>p:nth-child(3){
     text-align: justify;
 }
 
-#projects>div>div>h4{
+#projects>div:nth-child(2)>div>h4{
     margin-top: 2%;
     margin-bottom: 1%;
     margin-left: 8%;
     color: rgb(3, 113, 104);
 }
-#projects>div>div>p>i{
+#projects>div:nth-child(2)>div>p>i{
     font-size: 30px;
     margin-top: 8px;
     margin-right: 15px;
+    /* align-items: center; */
 }
-#projects>div>div>p>i:nth-child(1){
+#projects>div:nth-child(2)>div>p:nth-child(5)>i{
     color: orangered;
 }
-#projects>div>div>p>i:nth-child(2){
+#projects>div:nth-child(2)>div>p:nth-child(6)>i{
     color: blue;
 }
-#projects>div>div:nth-child(3)>p>i:nth-child(2), #projects>div>div:nth-child(4)>p>i:nth-child(2){
+#projects>div:nth-child(2)>div:nth-child(3)>p:nth-child(6)>i, #projects>div>div:nth-child(4)>p:nth-child(6)>i{
     color: gray;
 }
-#projects>div>div>p>i:nth-child(3){
+#projects>div:nth-child(2)>div>p:nth-child(7)>i{
     color: rgb(211, 211, 18);
 }
-#projects>div>div>div{
+#projects>div:nth-child(2)>div>div{
     margin-top: 5%;
-    margin-bottom: 5%;
+    /* margin-bottom: 10%; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20%;
 }
-#projects>div>div>div>button{
+#projects>div:nth-child(2)>div:nth-child(1)>div{
+    margin-bottom: 15%;
+}
+#projects>div:nth-child(2)>div>div>a{
     padding:8px 14px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(7, 165, 152);
     color: white;
     border: 0px;
     border-radius: 5px;
 }
-#projects>div>div>div>button:hover{
+#projects>div:nth-child(2)>div>div>button:hover{
     background-color: rgb(3, 110, 101);
     cursor: pointer;
 }
-#projects>div>div>div>button>i{
+#projects>div:nth-child(2)>div>div>button>i{
     font-size: 12px;
 }
 #contact{

@@ -50,7 +50,9 @@ document.getElementById("github").addEventListener("click",function(){
 document.getElementById("downloadResume").addEventListener("click", function(){
     window.open("https://drive.google.com/file/d/16b6lkjhxWxLzrBDZ2h4QqPEofbPDaCHs/view?usp=sharing", "_blank");
 })
-
+document.getElementById("6").addEventListener("click", function(){
+    window.open("https://drive.google.com/file/d/16b6lkjhxWxLzrBDZ2h4QqPEofbPDaCHs/view?usp=sharing", "_blank");
+})
 function SendMail(){
     let params = {
         from_name : document.getElementById("fullName").value,

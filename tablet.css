@@ -1,4 +1,32 @@
-@media screen and (max-width:768px){
+@media screen and (min-width:481px) and (max-width:768px){
+
+    .checkbtn{
+        display:block;
+        margin-right: -80%;
+        margin-left: 60%;
+        color: rgb(3, 113, 104);
+        font-size: 100%;
+    }
+    .container .nav_menu{
+        /* width: 50%; */
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        background-color: whitesmoke;
+        top: 45px;
+        right: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .container .nav_menu>li{
+        display: block;
+    }
+    
+    #check:checked ~ .container .nav_menu{
+        padding-bottom: 60px;
+        padding-right: 2%;
+        right: 0%;
+    }
 
     #navbar .container>ul>li, #navbar  .container>ul>li>a{
         font-size: 9px;
@@ -74,16 +102,7 @@
         font-size: 11px;
         margin-left: 39%;
     }
-    #gitstats{
-        display: flex;
-        flex-direction: column;
-    }
-    #gitstats>p>img{
-        width: 320px;
-        margin-top: -60px;
-        margin-bottom: -20px;
-    }
-
+  
     #educationcolumn>div>div>h2{
         font-size: 17px;
         line-height: 23px;
@@ -93,48 +112,65 @@
         line-height: 18px;
     }
 
-    #skills>div{
+    #skills>div:nth-child(2), #tools>div:nth-child(2){
         width: 80%;
         grid-template-columns: repeat(3,1fr);
         gap: 50px;
     }
-    #skills>div>div>h2{
+    #skills>div:nth-child(2)>div>h2, #tools>div:nth-child(2)>div>h2{
         font-size: 18px;
     }
-    #skills>div>div:nth-child(3)>img{
+    #skills>div:nth-child(2)>div:nth-child(3)>img{
         width: 35%;
         margin-top: 12px;
         margin-bottom: 8px;
     }
-    #skills>div>div:nth-child(4)>img{
+    #skills>div:nth-child(2)>div:nth-child(4)>img{
         width: 35%;
         margin-top: 12px;
         margin-bottom: 8px;
+    }
+    #gitstats{
+        margin-top: 12%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    #gitstats>p>img{
+        width: 320px;
+        margin-top: -60px;
+        margin-bottom: -20px;
+    }
+    #projects>div:nth-child(3)>div:nth-child(2){
+        width: 80%;
     }
 
     #projects>div{
         width: 85%;
         gap:40px;
     }
-    #projects>div>div{
+    #projects>div:nth-child(2)>div{
         height: 90%;
         margin-bottom: 20px;
     }
-    #projects>div>div>p>i{
+    #projects>div:nth-child(2)>div>p>i{
         font-size: 22px;
         margin-right: 10px;
     }
-    #projects>div>div>img{
+    #projects>div:nth-child(2)>div>img{
         height: 38%;
     }
-    #projects>div>div>h2{
+    #projects>div:nth-child(2)>div>h2{
         font-size: 18px;
     }
-    #projects>div>div>p{
+    #projects>div:nth-child(2)>div>p{
         font-size: 13px;
     }
-    #projects>div>div>div>button{
-        font-size: 12px;
+    #projects>div:nth-child(2)>div>div>a{
+        margin-bottom: 10%;
+        font-size: 11px;
+        padding: 6px 11px;
         text-align: justify;
     }
 
