@@ -406,17 +406,6 @@ section:nth-child(odd){
     margin: auto;
     margin-top: 15px;
 }
-#gitstats{
-    width: 90%;
-    margin: auto;
-    margin-top: 4%;
-}
-#gitstats>p{
-    text-align: center;
-}
-#gitstats>p>img{
-    width: 35%;
-}
 
 #projects{
     width: 95vw;
@@ -430,12 +419,12 @@ section:nth-child(odd){
     color: rgb(7, 165, 152);
     font-size: 35px;
 }
-#projects>div{
+#projects>div:nth-child(2){
     width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
-    gap:100px;
+    gap:70px;
 }
 #projects>div:nth-child(2)>div{
     height: 100%;
@@ -526,6 +515,21 @@ section:nth-child(odd){
 #projects>div:nth-child(2)>div>div>button>i{
     font-size: 12px;
 }
+#projects>div:nth-child(3){
+    margin-top: 10%;
+}
+
+#gitstats{
+    width: 90%;
+    margin: auto;
+}
+#gitstats>p{
+    text-align: center;
+}
+#gitstats>p>img{
+    width: 35%;
+}
+
 #contact{
     width: 95vw;
     margin: auto;

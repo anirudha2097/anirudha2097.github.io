@@ -119,7 +119,7 @@
         font-size: 15px;
     }
    
-    #projects>div{
+    #projects>div:nth-child(2){
         width: 75%;
         grid-template-columns:  repeat(1, 1fr);
         gap: 70px;
@@ -167,9 +167,8 @@
         font-size: 0.7rem;
     }
     #gitstats{
-        width: 100%;
+        width: 80%;
         margin-top: 15%;
-        margin-bottom: -15%;
     }
     #gitstats>p>img{
         width: 90%;

@@ -148,7 +148,8 @@
 
     #projects>div{
         width: 85%;
-        gap:40px;
+        margin: auto;
+        
     }
     #projects>div:nth-child(2)>div{
         height: 90%;
