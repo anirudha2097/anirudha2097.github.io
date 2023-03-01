@@ -212,6 +212,9 @@
         gap: 20px;
         font-size: 14px;
     }
+    #contact>div>div>div>a{
+        font-size: 14px;
+    }
     #contact>div>div>div>i{
         font-size: 13px;
     }

@@ -554,6 +554,9 @@ section:nth-child(odd){
     display: flex;
     justify-content: space-between;
 }
+#contact>div>div>div>a{
+    line-height: 35px;
+}
 #contact>div>div>input, #contact>div>div>textarea{
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
