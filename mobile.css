@@ -46,6 +46,15 @@
     #home>div>img{
         display: none;
     }
+    .wrapper .dynamic-txt{
+        height: 32px;
+    }
+    .dynamic-txt li{
+        font-size: 20px;
+    }
+    .dynamic-txt li span::after{
+        top: 2px;
+    }
 
     #aboutme>div:nth-child(2){
         display: grid;
