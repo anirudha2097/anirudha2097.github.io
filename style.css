@@ -556,6 +556,8 @@ section:nth-child(odd){
 }
 #contact>div>div>div>a{
     line-height: 35px;
+    text-decoration: none;
+    color: black;
 }
 #contact>div>div>input, #contact>div>div>textarea{
     font-family: 'Montserrat', sans-serif;
