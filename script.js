@@ -36,7 +36,7 @@ document.getElementById("deploy4Button").addEventListener("click",function(){
 })
 
 document.getElementById("instagram").addEventListener("click",function(){
-    window.open("https://www.instagram.com/__anya_38/", "_blank")
+    window.open("https://www.instagram.com/_anirudha_desai/", "_blank")
 })
 
 document.getElementById("linkedin").addEventListener("click",function(){
